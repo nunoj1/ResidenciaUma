@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <title>Residência Universitária Nossa Senhora das Vitórias</title>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="header">
+            <p @click="fo">Home</p>
+            <p @click="so">About</p>
+            <p @click="to">Promotions</p>
+            <p @click="fuo">Prices</p>
+            <p @click="ffo">Contacts</p>
+        </div>
+        <div class="language">
+            <a href="pt.html">
+                <p id="pt">Português</p>
+            </a>
+            <a href="#">
+                <p id="uk">English</p>
+            </a>
+        </div>
+        <div class="pop" v-if="j==1" @click="hide">
+            <span class="text1">Students Residence</span>
+            <span class="text2">Welcome</span>
+        </div>-->
+        <div class="content1" v-if="i==1">
+            <div class="inicio2">
+                <video autoplay muted loop id="video">
+                    <source src="timelapse.mp4" type="video/mp4">
+                    <!--inserir aqui video da residencia-->
+                </video>
+                <a href="https://www.uma.pt/">
+                    <img src="img/log.png">
+                </a>
+            </div>
+        </div>
+        <div class="content2" id="myDiv" v-if="i==2">
+            <div class="upper">
+                <div class="port1">
+                    <div class="bigi">
+                        <img src="img/residencia.jpg">
+                    </div>
+                    <div class="slider">
+                        <div class="slid">
+                            <figure id="sl">
+                                <img src="img/rec1.jpg">
+                                <img src="img/rec2.jpg">
+                            </figure>
+                        </div>
+                        <div class="slid">
+                            <figure id="sl2">
+                                <img src="img/e1.jpg">
+                                <img src="img/e2.jpg">
+                            </figure>
+                        </div>
+                        <div class="slid">
+                            <figure id="sl3">
+                                <img src="img/s1.jpg">
+                                <img src="img/s2.jpg">
+                            </figure>
+                        </div>
+                        <div class="slid">
+                            <figure id="sl4">
+                                <img src="img/q1.jpg">
+                                <img src="img/q2.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <span>The Studens Residence is situated in Funchal historical centre, Santa Maria Street nº 253,
+                        near the Contemporary Art Museum and Madeira Military Museum.
+
+                        Inaugurated on 27th january 2009, presents an architecture that combines a welcoming atmosphere
+                        with modern equipment. The Residence will seduce the most demanding guest, inviting them to an
+                        extended stay.</span>
+                </div>
+                <div class="numbers">
+                    <div class="counter">
+                        <div class="col">
+                            <span>Total Rooms</span>
+                            <div class="num4">82</div>
+                        </div>
+                        <div class="col">
+                            <span>Dubles</span>
+                            <div class="num2">31</div>
+                        </div>
+                        <div class="col">
+                            <span>Triples</span>
+                            <div class="num3">45</div>
+                        </div>
+                        <div class="col">
+                            <span>For Disabilitated </span>
+                            <div class="num1">6</div>
+                        </div>
+
+                        <div class="col">
+                            <span>Beds</span>
+                            <div class="num5">209</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <span>© SASUMa 2019</span>
+                </div>
+                <div class="local">
+                    <span>Rua de Santa Maria, nº 253</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/UMaGIRP/"> <img src="img/social1.png"></a>
+                    <a href="https://www.instagram.com/universidadedamadeira/"> <img src="img/social2.png"></a>
+                    <a href="https://twitter.com/umagirp"> <img src="img/social3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content3" v-if="i==3">
+            <div class="upper2">
+                <img src="img/soon.png">
+            </div>
+            <div class="footer">
+                <div>
+                    <span>© SASUMa 2019</span>
+                </div>
+                <div class="local">
+                    <span>Rua de Santa Maria, nº 253</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/UMaGIRP/"> <img src="img/social1.png"></a>
+                    <a href="https://www.instagram.com/universidadedamadeira/"> <img src="img/social2.png"></a>
+                    <a href="https://twitter.com/umagirp"> <img src="img/social3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content2" v-if="i==4">
+            <div class="conteud">
+                <div class="prec">
+                    <table>
+                        <tr id="red">
+                            <th id="mid">Low Season 13 September to 24 June</th>
+                            <th id="mid">Up to 7 Nights</th>
+                            <th id="mid">More than 7 Nights</th>
+                        </tr>
+                        <tr>
+                            <td>Individual</td>
+                            <td id="right">17.50€</td>
+                            <td id="right">15.00€</td>
+                        </tr>
+                        <tr>
+                            <td>Double</td>
+                            <td id="right">12.50€</td>
+                            <td id="right">10.50€</td>
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td id="right">10.00€</td>
+                            <td id="right">8.50€</td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr id="blue">
+                            <th id="mid">High Season 25 June to 12 September</th>
+                            <th id="mid">Up to 7 Nights</th>
+                            <th id="mid">More than 7 Nights</th>
+                        </tr>
+                        <tr>
+                            <td>Individual</td>
+                            <td id="right">20.00€</td>
+                            <td id="right">18.00€</td>
+                        </tr>
+                        <tr>
+                            <td>Double</td>
+                            <td id="right">15.00€</td>
+                            <td id="right">13.50€</td>
+                        </tr>
+                        <tr>
+                            <td>Triple</td>
+                            <td id="right">13.50€</td>
+                            <td id="right">12.00€</td>
+                        </tr>
+                    </table>
+                    <p id="lowerp">* Check-In: 14:00 - 18:00</p>
+                    <p>* Check-Out: untill 12:00am</p>
+                    <p>* Person/Night</p>
+                    <p>* The prices shown plus the VAT rate in effect where applicable.</p>
+                    <p>* The payment for accommodation is made to the entry.</p>
+                    <p>* For children between 2 and 12 years, 50% discount.</p>
+                </div>
+                <div class="inst">
+                    <div class="info">
+                        <h3 id="pred">General</h3>
+                        <p>Snack Bar, 24 hour reception, Garden, Non-Smoking Rooms, Rooms / Facilities for Disabled Guests, Elevator, Luggage Storage.</p>
+                    </div>
+                    <div class="info">
+                        <h3 id="pred">Services</h3>
+                        <p>Laundry, fax / copier, room with vending machines for food products.</p>
+                    </div>
+                    <div class="info">
+                        <h3 id="pred">Internet</h3>
+                        <p>Free wireless internet available in rooms and public areas</p>
+                    </div>
+                    <div class="info">
+                        <h3 id="pblue">Parking lot</h3>
+                        <p>Parking is available, please ask for prices.</p>
+                    </div>
+                    <div class="info">
+                        <h3 id="pblue">Cancellations</h3>
+                        <p> 	Residence Information
+                            No fee will be charged, if canceled up to 7 days before date of arrival.
+                            If canceled later or in case of no-show, the first night will be charged.</p>
+                    </div>
+                    <div class="info">
+                        <h3 id="pblue">Residence Information</h3>
+                        <p>The Residence as a snack-bar offering light meals and coffee shop with reasonable prices.
+
+                            We have special prices for groups upon request.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <span>© SASUMa 2019</span>
+                </div>
+                <div class="local">
+                    <span>Rua de Santa Maria, nº 253</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/UMaGIRP/"> <img src="img/social1.png"></a>
+                    <a href="https://www.instagram.com/universidadedamadeira/"> <img src="img/social2.png"></a>
+                    <a href="https://twitter.com/umagirp"> <img src="img/social3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content2" v-if="i==5">
+            <div class="upper3">
+                <div class="contact">
+                    <p><b>Serviços de Acção Social da Universidade da Madeira</b></p>
+                    <p><b>Rua de Santa Maria n° 253</b></p>
+                    <p><b>9060-291 Funchal- Madeira</b></p>
+                    <p></p>
+                    <p><b>Telefone:</b> 291 201817</p>
+                    <p><b>Fax:</b> 291 201816</p>
+                    <p><b>Email:</b> residencia@sasuma.pt</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.439689176094!2d-16.901257884500964!3d32.64774169787219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6061d3d0832ce9%3A0xe600da62b922138c!2sresidencia+universit%C3%A1ria!5e0!3m2!1spt-PT!2spt!4v1548440324135"
+                    width="600" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="footer">
+                <div>
+                    <span>© SASUMa 2019</span>
+                </div>
+                <div class="local">
+                    <span>Rua de Santa Maria, nº 253</span>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/UMaGIRP/"> <img src="img/social1.png"></a>
+                    <a href="https://www.instagram.com/universidadedamadeira/"> <img src="img/social2.png"></a>
+                    <a href="https://twitter.com/umagirp"> <img src="img/social3.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+    <script src="scroll.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
